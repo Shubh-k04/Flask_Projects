@@ -1,0 +1,72 @@
+body {
+  background-color: #2e3440;
+}
+
+.global {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #d8dee9;
+  position: absolute;
+  left: 45%;
+}
+
+.header{
+  color: #d8dee9;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+}
+
+th{
+  padding-left: 40px !important;
+}
+
+table.highlight > tbody > tr:hover {
+  background-color: #4c566a !important;
+}
+
+table.highlight > tbody > tr {
+  color: #88c0d0 !important;
+}
+
+.row {
+  display: flex;
+}
+
+.row input:focus {
+  border-bottom: 1px solid #88c0d0 !important;
+  box-shadow: 0 1px 0 0 #88c0d0 !important;
+}
+
+table.highlight > tbody > tr:hover {
+  background-color: #4c566a !important;
+}
+
+table.highlight > tbody > tr {
+  color: #88c0d0 !important;
+}
+
+nav {
+  background-color: #4c566a;
+}
+
+.brand-logo{
+  padding-left: 15px !important;
+}
+
+select{
+  display: block !important;
+}
+
+.width{
+  width: 100%;
+  background-color: #4c566a;
+  color: #88c0d0;
+}
+
+.width:hover{
+  background-color: #2E3440;
+}

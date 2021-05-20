@@ -1,0 +1,148 @@
+body {
+  background-color: #2e3440;
+}
+
+.global {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #d8dee9;
+  position: absolute;
+  left: 45%;
+}
+
+.header {
+  color: #d8dee9;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+}
+
+th {
+  padding-left: 20px !important;
+}
+
+table.highlight > tbody > tr:hover {
+  background-color: #4c566a !important;
+}
+
+table.highlight > tbody > tr {
+  color: #88c0d0 !important;
+}
+
+.row {
+  display: flex;
+}
+
+.row input:focus {
+  border-bottom: 1px solid #88c0d0 !important;
+  box-shadow: 0 1px 0 0 #88c0d0 !important;
+}
+
+nav {
+  background-color: #4c566a;
+}
+
+.brand-logo {
+  padding-left: 15px !important;
+}
+
+select {
+  display: block !important;
+}
+
+.width {
+  background-color: #4c566a;
+  color: #88c0d0;
+}
+
+.width_new {
+  width: 100%;
+  background-color: #4c566a;
+  color: #88c0d0;
+}
+
+.width:hover{
+    background-color: #4c566a;   
+}
+input{
+    width: 80% !important;
+    color: #d8dee9;
+}
+
+button{
+    position: relative;
+    left: 81%;
+    bottom: 60%;
+    width: 10%;
+}
+
+.icon{
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+.danger {
+  position: absolute;
+  background-color: #bf616a !important;
+  color: #d8dee9;
+}
+.materialert .close-alert {
+  -webkit-appearance: none;
+  border: 0;
+  cursor: pointer;
+  color: inherit;
+  background: 0 0;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  filter: alpha(opacity=40);
+  margin-bottom: -5px;
+  position: absolute;
+  top: 16px;
+  right: 5px;
+}
+
+.close-alert{
+  color: #88C0D0;
+}
+
+.materialert.error {
+  background-color: #bf616a;
+  color: #d8dee9;
+}
+
+.materialert.success {
+  background-color: #a3be8c;
+  color: #2e3440;
+}
+
+.materialert {
+  position: relative;
+  min-width: 150px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.1s linear;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.clear_btn{
+  background-color: #4c566a;
+  color: #88C0D0;
+  width: 100%;
+}

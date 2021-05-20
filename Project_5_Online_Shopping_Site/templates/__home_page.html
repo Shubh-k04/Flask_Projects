@@ -1,0 +1,18 @@
+{% extends "__basic_layout.html" %} {% block body %} {% if timeline and logged %} 
+<div class="header">Your Recent Activites</div>
+<br><br><br>
+{% for i in timeline[::-1] %}
+<div class="timeline">
+  <div class="timeline-container info">
+    <div class="timeline-icon">
+      <i class="fad fa-check"></i>
+    </div>
+    <div class="timeline-body">
+      <p>{{ i }}</p>
+      <p class="timeline-subtitle"></p>
+    </div>
+  </div>
+</div>
+{% endfor %} {% else %}
+<div class="warning">Welcome To PyShop!</div>
+{% endif %} {% endblock %}

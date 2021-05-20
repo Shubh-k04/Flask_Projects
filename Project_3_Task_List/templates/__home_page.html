@@ -1,0 +1,36 @@
+{% extends "__basic_layout.html" %}
+
+{% block body %}
+<div class="row container">
+    <form class="col s12 inline" method="POST">
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field">
+                    <input id="email_inline" name='task' type="text" />
+                    <label for="email_inline">Your Task</label>
+                </div>
+            </div>
+        </div>
+        <button class="btn width">Add Task</button>
+    </form>
+</div>
+{% if tasks %}
+    <div class="your_tasks">
+        <table class="responsive-table highlight table-dark container">
+            {% for i in tasks %}
+            <tr>
+                <th>
+                    <a href="/remove/{{ i }}">
+                        <title>Remove Task</title>
+                        <i class="fad fa-times icon"></i>
+                    </a>
+                </th>
+                <td>{{ i }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% else %}
+    <div class="header">Looks Like You Havnt Added Any Task Yet</div>
+{% endif %}
+{% endblock %}

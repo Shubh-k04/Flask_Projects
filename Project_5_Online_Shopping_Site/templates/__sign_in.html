@@ -1,0 +1,10 @@
+{% extends "__basic_layout.html" %} {% block body %} <br /><br />
+<span class="header">Sign Up</span>
+<br /><br /><br />
+<form method="POST" class="form">
+    <input type="text" name="username" placeholder="Choose A Username!" class="input-box" />
+    <input type="password" name="password" placeholder="Create A Password" class="input-box" />
+    <input type="password" name="confirm_pass" placeholder="Confirm Your Password" class="input-box" />
+    <button class="btn width" type="submit">Sign Up!</button>
+</form>
+{% endblock %}

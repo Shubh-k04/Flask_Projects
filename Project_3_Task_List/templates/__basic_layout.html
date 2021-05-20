@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Task List</a>
+      </div>
+    </nav>
+    <div class="container">
+      {% for i in get_flashed_messages(with_categories=True) %} {% if i[0] ==
+      'success' %}
+      <div class="materialert success">
+        <span>{{ i[1] }}</span>
+        <button type="button" class="close-alert"><i class="fad fa-times"></i></button>
+      </div>
+      {% else %}
+      <div class="materialert error">
+        <span>{{ i[1] }}</span>
+        <button type="button" class="close-alert"><i class="fad fa-times"></i></button>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+    <br /><br /><br />
+    <div class="header">Welcome To Task List</div>
+    <br /><br />
+    {% block body %} {% endblock %}
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/styles.css') }}"
+    />
+
+    <script>
+      $(".materialert .close-alert").click(function () {
+        $(this).parent().hide("slow");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+{% extends "__basic_layout.html" %}
+
+{% block body %}
+<br><br><br><br>
+<div class="row center">
+    <div class="col s12 m6">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">{{ info[0] }}</span><br>
+                <hr>
+                <br>
+                <p>
+                    <i class="weather fad fa-{{ info[8] }}"></i>
+                    <br>
+                    <div class="temperature">
+                        <span class="large">{{ info[1] }}°</span>
+                        <span class="small">C</span>
+                    </div>
+                    <div class="feels_like">
+                        <span>Feels like {{ info[2] }}°C</span>
+                    </div>
+                    <br>
+                    <div class="header">
+                        <div class="value">{{ info[3] }}</div>
+                    </div>
+                    <hr>
+                    <div class="more_info">
+                        <table class="responsive-table highlight table-dark container">
+                            <tr>
+                                <th><i class="fad fa-humidity"></i>&nbsp;&nbsp;&nbsp;Humidity</th>
+                                <td>{{ info[4] }}%</td>
+                            </tr>
+                            <tr>
+                                <th><i class="fad fa-wind"></i>&nbsp;&nbsp;Wind Speed</th>
+                                <td>{{ info[5] }} km/h &nbsp;&nbsp;&nbsp;&nbsp;<i class="fad fa-location-arrow"></i></td>
+                            </tr>
+                            <tr>
+                                <th><i class="fad fa-arrow-down"></i>&nbsp;&nbsp;&nbsp;Pressure</th>
+                                <td>{{ info[6] }} mb</td>
+                            </tr>
+                            <tr>
+                                <th><i class="fad fa-eye"></i>&nbsp;&nbsp;&nbsp;Visibility</th>
+                                <td>{{ info[7] }} km</td>
+                            </tr>
+                          </table>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

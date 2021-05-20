@@ -1,0 +1,40 @@
+{% extends "__basic_layout.html" %}
+{% block body %}
+<div class="row">
+  <br>
+  <div class="header">Welcome To The Market</div>
+  <br>
+  {% for i , j in items.items() %}
+    <div class="col s12 m6">
+        <div class="card blue-grey darken-1" >
+          <div class="card-content white-text"  style="background-color: #3B4252;">
+            <span class="card-title">{{ i }}</span>
+            <p>
+              <table class="responsive-table highlight table-dark">
+                <tr>
+                  <th>Sold By</th>
+                  <td>{{ j[0] }}</td>
+                </tr>
+                <tr>
+                  <th>Date</th>
+                  <td>{{ j[1] }}</td>
+                </tr>
+                <tr>
+                  <th>Price</th>
+                  <td>{{ j[2] }}</td>
+                </tr>
+              </table>
+            </p>
+          </div>
+          <div class="card-action"  style="background-color: #3B4252;">
+            <a href="/buy/{{ i }}" class="btn">Buy This Item</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <br><br>
+    </div>
+    <a class="btn width" href="/market/new">Add Your Item</a>
+    <br><br><br>
+            
+{% endblock %}

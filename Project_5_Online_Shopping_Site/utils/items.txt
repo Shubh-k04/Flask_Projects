@@ -1,0 +1,1 @@
+{"DEV Stickers": ["John Doe", "12 April 2020", 599], "Wireless KeyBoard": ["John Smith", "17 May 2020", 7599], "100GB Pendrive": ["Mary Smith", "8 January 2019", 9999]}

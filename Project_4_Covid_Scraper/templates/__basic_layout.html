@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+      </div>
+    </nav>
+    <div class="container">{% block body %}{% endblock %}</div>
+    <hr style="width: 90%; padding-left: 5%; color: #88C0D0 !important;">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/styles.css') }}"
+    />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll("select");
+        var instances = M.FormSelect.init(elems, options);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+body {
+  overflow: wrap;
+  background-color: #2e3440;
+}
+
+.header {
+  text-align: center;
+  color: #d8dee9;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 35px !important;
+}
+input {
+  color: #d8dee9;
+}
+
+.warning{
+  color: #d8dee9;
+  position: absolute;
+  justify-content: center;
+  top: 30%;
+  left: 40%;
+  font-size: 40px;
+}
+
+.warning_exception{
+  font-size: 42px;
+  position: absolute;
+  left: 29%;
+  top: 35% !important;
+  color: #ECEFF4;
+}
+
+.warning_exception button{
+  position: relative;
+  left: -10% !important;
+}
+input:focus {
+  border-bottom: 1px solid #88c0d0 !important;
+  box-shadow: 0 1px 0 0 #88c0d0 !important;
+}
+
+.width {
+  background-color: #88c0d0 !important;
+  color: #2e3440 !important;
+}
+
+.materialert {
+  position: relative;
+  min-width: 150px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.1s linear;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn{
+  width: 100%;
+}
+
+table.highlight > tbody > tr:hover {
+  background-color: #4c566a !important;
+}
+
+table.highlight > tbody > tr {
+  color: #77888d !important;
+}
+
+.card{
+  background-color: #4c566a !important;
+}
+
+.brand-logo{
+  font-family: 'Italianno', cursive;
+  font-size: 57px !important;
+}
+
+.danger {
+  position: absolute;
+  background-color: #bf616a !important;
+  color: #d8dee9;
+}
+.materialert .close-alert {
+  -webkit-appearance: none;
+  border: 0;
+  cursor: pointer;
+  color: inherit;
+  background: 0 0;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  filter: alpha(opacity=40);
+  margin-bottom: -5px;
+  position: absolute;
+  top: 16px;
+  right: 5px;
+}
+
+.materialert.error {
+  background-color: #bf616a;
+  color: #d8dee9;
+}
+
+.materialert.success {
+  background-color: #a3be8c;
+  color: #2e3440;
+}
+
+th{
+  color: #d8dee9;
+  padding-left: 30px !important;
+  user-select: none;
+}
+
+td{
+  color: #d8dee9;
+}
+
+
+p {
+  font-weight: 300;
+ justify-content: center;
+  font-size: 14px;
+}
+.timeline {
+  position: relative;
+  padding-left: 4rem;
+  margin: 0 0 0 30px;
+  color: #ECEFF4 !important;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 130px;
+  background: #3B4252;
+}
+.timeline .timeline-container {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.timeline .timeline-container .timeline-icon {
+  position: absolute;
+  left: -85px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  background: #3B4252;
+}
+.timeline .timeline-container .timeline-icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.timeline .timeline-container .timeline-body {
+  background: #3B4252;
+  border-radius: 3px;
+  padding: 20px 20px 15px;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+}
+.timeline .timeline-container .timeline-body:before {
+  content: "";
+  background: inherit;
+  position: relative;
+  width: 20px;
+  top: 40%;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  transform: rotate(45deg);
+  border-radius: 0 0 0 2px;
+}
+.timeline .timeline-container .timeline-body .timeline-title {
+  margin-bottom: 1.4rem;
+}
+.timeline .timeline-container .timeline-body .timeline-title .badge {
+  background: #3B4252;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.timeline .timeline-container .timeline-body .timeline-subtitle {
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.4;
+  margin-top: 16px;
+  font-size: 11px;
+}
+.timeline .timeline-container.info .badge,
+.timeline .timeline-container.info .timeline-icon {
+  background: #4C566A !important;
+}

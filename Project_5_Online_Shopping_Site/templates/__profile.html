@@ -1,0 +1,25 @@
+{% extends "__basic_layout.html" %}
+
+{% block body %}
+<br><br>
+<div class="header">Profile</div>
+<br><br><br>
+<table class="responsive-table highlight table-dark container">
+    {% for i , j in items.items() %}
+    <tr>
+        <th>{{ i }}</th>
+        <td>{{ j }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br><br>
+<div class="header">Options</div>
+<br>
+<a href="/delete/{{ name }}">
+    <button class="btn width">Delete This Account</button>
+</a>
+<br><br>
+<a href="/clear">
+    <button class="width btn">Clear Recent Activites</button>
+</a>
+{% endblock %}

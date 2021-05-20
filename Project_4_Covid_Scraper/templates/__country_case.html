@@ -1,0 +1,15 @@
+{% extends "__basic_layout.html" %} {% block body %} <br /><br />
+<div class="header">Showing Current Cases For {{ name }}</div>
+<br><br><br>
+<table class="responsive-table highlight table-dark container">
+  {% for i , j in cases.items() %}
+  <tr>
+    <th>{{ i }}</th>
+    <td>{{ j }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<br><br>
+
+{% endblock %}
+<hr style="width: 90%; padding-left: 8%;">
